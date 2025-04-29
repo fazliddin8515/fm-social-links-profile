@@ -4,7 +4,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/social-links-profile-NEqDDTtcYW](https://www.frontendmentor.io/solutions/social-links-profile-NEqDDTtcYW)
 - Live Site URL: [https://fazliddin8515.github.io/fm-social-links-profile](https://fazliddin8515.github.io/fm-social-links-profile)
 - Source Code URL: [https://github.com/fazliddin8515/fm-social-links-profile](https://github.com/fazliddin8515/fm-social-links-profile)
 
