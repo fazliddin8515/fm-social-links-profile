@@ -15,7 +15,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - Semantic HTML5 markup
 - CSS custom properties
 - Relative css units
-- BEM methodology
+- CUBE CSS methodology
 
 ## Author
 

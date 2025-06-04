@@ -3,43 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Social links profile</title>
   </head>
   <body>
-    <main class="card">
-      <img
-        class="card__profile-pic"
-        src="./images/avatar-husan.jpg"
-        alt="avatar husan picture"
-      />
+    <main>
+      <picture class="card__image">
+        <img src="./images/avatar-husan.jpg" alt="Husan Eshonqulov" />
+      </picture>
+      <article class="card">
+        <div class="card_content">
+          <hgroup class="card__info">
+            <h2>Husan Eshonqulov</h2>
+            <p><strong>Tashkent, Uzbekistan</strong></p>
+          </hgroup>
 
-      <div class="card__name-location">
-        <h1 class="card__name">Husan Eshonqulov</h1>
-        <p class="card__location">Tashkent, Uzbekistan</p>
-      </div>
+          <p class="card__quote"><q>Software Engineer</q></p>
 
-      <p class="card__bio">"Software Engineer"</p>
-
-      <nav class="card__nav">
-        <ul class="card__links">
-          <li class="card__link">
-            <a href="https://www.linkedin.com/in/husan-eshonqulov">LinkedIn</a>
-          </li>
-          <li class="card__link">
-            <a href="https://github.com/husan-eshonqulov">GitHub</a>
-          </li>
-          <li class="card__link">
-            <a href="https://t.me/husan_eshonqulov">Telegram</a>
-          </li>
-        </ul>
-      </nav>
+          <nav class="card__links">
+            <ul role="list">
+              <li>
+                <a href="https://www.linkedin.com/in/husan-eshonqulov"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/husan-eshonqulov">GitHub</a>
+              </li>
+              <li>
+                <a href="https://t.me/husan_eshonqulov">Telegram</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </article>
     </main>
   </body>
 </html>

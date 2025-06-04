@@ -1,31 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 :root {
-  --clr-green: hsl(75, 94%, 57%);
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-grey-700: hsl(0, 0%, 20%);
-  --clr-grey-800: hsl(0, 0%, 12%);
-  --clr-grey-900: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
 
-  --t1-font: "Inter", sans-serif;
-  --t1-weight: 700;
-  --t1-size: 2.4rem;
-  --t1-lh: 1.5;
-  --t1-ls: 0px;
+  --space-50: 4px;
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-500: 40px;
 
-  --t2-font: "Inter", sans-serif;
-  --t2-weight-regular: 400;
-  --t2-weight-bold: 600;
-  --t2-size: 1.4rem;
-  --t2-lh: 1.5;
-  --t2-ls: 0px;
+  --radius-sm: var(--space-100);
+  --radius-lg: var(--space-150);
 
-  --space-500: 4rem;
-  --space-300: 2.4rem;
-  --space-200: 1.6rem;
-  --space-150: 1.2rem;
-  --space-100: 0.8rem;
-  --space-50: 0.4rem;
+  --font-sans: "Inter", sans-serif;
+
+  --text-preset-1: 24px;
+  --text-preset-2: 14px;
+  --line-preset-1: 1.5;
 }
 
 * {
@@ -34,93 +28,32 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: var(--t2-font);
-  font-size: var(--t2-size);
-  font-weight: var(--t2-weight-regular);
-  line-height: var(--t2-lh);
-  letter-spacing: var(--t2-ls);
-  background-color: var(--clr-grey-900);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  color: var(--white);
+  background-color: var(--grey-900);
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--text-preset-2);
+  line-height: var(--line-preset-1);
 }
 
-.card {
-  padding: var(--space-500);
-  border-radius: var(--space-150);
-  color: var(--clr-white);
-  background-color: var(--clr-grey-800);
-
-  width: 38.4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-300);
+h2 {
+  font-weight: 600;
+  font-size: var(--text-preset-1);
 }
 
-.card__profile-pic {
-  width: 8.8rem;
-  border-radius: 50%;
+strong {
+  color: var(--green);
 }
 
-.card__name-location {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-50);
-}
-
-.card__name {
-  font-weight: var(--t1-weight);
-  font-size: var(--t1-size);
-}
-
-.card__location {
-  font-weight: var(--t2-weight-bold);
-  color: var(--clr-green);
-}
-
-.card__nav {
-  width: 100%;
-}
-
-.card__links {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-200);
+ul[role="list"] {
   list-style: none;
 }
 
-.card__link {
-  text-align: center;
-  padding-top: var(--space-150);
-  padding-bottom: var(--space-150);
-  border-radius: var(--space-100);
-  background-color: var(--clr-grey-700);
-}
-
-.card__link:hover {
-  color: var(--clr-grey-700);
-  background-color: var(--clr-green);
-}
-
-.card__link a:link {
-  font-weight: var(--t2-weight-bold);
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-@media (max-width: 23.4375rem) {
-  .card {
-    width: 32.7rem;
-    padding: var(--space-300);
-  }
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
